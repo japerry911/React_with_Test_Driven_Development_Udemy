@@ -47,3 +47,39 @@
   - no error -> pass
   - empty test -> pass
   - error -> fails
+- what does react testing libary do?
+  - creates virtual DOM for testing
+    - and methods for interacting with DOM
+  - browser not needed for testing
+- types of test
+  - unit tests
+    - tests one unit of code in isolation
+      - example: react component
+  - integration tests
+    - how multiple units work together
+  - functional tests
+    - tests a particular function of software
+    - behavior of function, not just one function
+    - **encouraged by react-testing-library**
+    - different mindset from unit testing
+      - unit testing
+        - isolated, mock dependencies, test internals
+        - very easy to pinpoint failures
+        - further from how users interact with software
+        - more likely to break with refactoring
+      - functional testing
+        - include all relevant units, test behavior
+        - close to how users interact with software
+        - robust tests
+        - more difficult to debug failing tests
+  - acceptance / end-to-end tests (E2E)
+    - use actual browser and server (Cypress, Selenium)
+- TDD vs BDD
+  - test driven development vs behavior driven development
+  - test library encourages testing behavior over implementations
+  - still TDD over BDD
+    - BDD is very explicity defined
+      - involves collaboration between lots of roles
+        - developers, QA, business partners, etc...
+      - defines proecss for different groups to interact
+    - TDD for course since there is one developer
