@@ -36,3 +36,14 @@
     - recommended by Testing Libary
     - comes with create-react-app
   - `npm test` runs an npm script that runs Jest in watch mode
+- Jest Watch Mode
+  - watch for changes in files since last commit
+- how does Jest work?
+  - global `test` method has two arguments:
+    - string description
+    - test function
+  - test fails if error is thrown when running function
+    - assertions throw errors when expectation fails
+  - no error -> pass
+  - empty test -> pass
+  - error -> fails
