@@ -1,0 +1,8 @@
+- TTD - test driven development
+  - phases
+    - red - start
+      - write a test for the expected behavior
+    - green - next
+      - write the code for that test to pass
+    - refactor - last
+      - clean up your code (remove code duplication, etc...)
