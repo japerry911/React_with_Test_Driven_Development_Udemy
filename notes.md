@@ -6,3 +6,33 @@
       - write the code for that test to pass
     - refactor - last
       - clean up your code (remove code duplication, etc...)
+- assertions
+  - expect
+    - jest global, starts the assertion
+    - expect argument
+      - subject of the assertion
+  - matcher
+    - type of assertion
+    - this match comes from Jest-DOM
+    - matcher argument
+      - refines matcher
+  - examples:
+    - `expect(linkElement).toBeInTheDocument();`
+    - `expect(element.textContent).toBe('hello');`
+    - `expect(elementsArray).toHaveLength(7);`
+  - jest-dom
+    - comes with create-react-app
+    - `src/setupTests.js` imports it before each test, makes matchers available
+    - DOM-based matchers
+- Jest
+  - React testing libary helps with
+    - rendering components into virtual DOM
+    - search virtual DOM
+    - interacting with virtual DOM
+  - needs a test runner
+    - find tests, run them, make assertions
+    - examples: Jest, mocha, jasmine, etc...
+  - Jest
+    - recommended by Testing Libary
+    - comes with create-react-app
+  - `npm test` runs an npm script that runs Jest in watch mode
